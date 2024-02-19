@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC Motor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>EBAC Motor</h1>
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+            <nav>
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#">Em destaque</a>
+                        </li>
+                        <li>
+                            <a href="#">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="#">Contato</a>
+                        </li>
+                        <li>
+                            <a href="#">Promoções</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+    <div id="carrossel-imagens">
+        <img src="img/amg.jpg" alt="mercedes amg">
+        <img src="img/amg2.jpg" alt="mercedes amg">
+        <img src="img/amg3.jpg" alt="mercedes amg">
+        <img src="img/vw.jpg" alt="mercedes amg">
+    </div>
+    <section id="sobre-loja">
+        <div class="outrocontainer">
+            <img src="img/EBACMOTOR.jpg" alt="loja">
+            <div>
+                <h2>Nome da loja</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus magni reiciendis dicta corrupti fuga esse officiis voluptas natus, error fugit repellat! Cumque odit est, voluptatem ullam ducimus earum ratione aspernatur.
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus magni reiciendis dicta corrupti fuga esse officiis voluptas natus, error fugit repellat! Cumque odit est, voluptatem ullam ducimus earum ratione aspernatur.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container container-flex">
+            <h2>Em destaque</h2>
+            <ul class="container">
+                <li>
+                    <img src="img/amg4.jpg" alt="carro">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Cambio manual, 4 portas
+                    </p>
+                    <strong>R$ 140.000,00</strong>
+                    <button type="button">Tenho interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#carrossel-imagens').slick({
+                autoplay: true,
+            });
+            
+            $('.menu-hamburguer').click(function() {
+                $('nav').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>
