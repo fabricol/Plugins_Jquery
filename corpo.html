@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container container-flex">
             <h1>EBAC Motor</h1>
             <div class="menu-hamburguer">
                 <span></span>
@@ -49,6 +49,7 @@
     <section id="sobre-loja">
         <div class="outrocontainer">
             <img src="img/EBACMOTOR.jpg" alt="loja">
+            <br>
             <div>
                 <h2>Nome da loja</h2>
                 <p>
@@ -61,16 +62,129 @@
         </div>
     </section>
     <section>
-        <div class="container container-flex">
+        <div class="container">
             <h2>Em destaque</h2>
-            <ul class="container">
+            <ul class="container-flex lista-veiculos">
                 <li>
                     <img src="img/amg4.jpg" alt="carro">
-                    <h3>Carro BMW</h3>
+                    <h3>Ferrari</h3>
                     <p>
                         Cambio manual, 4 portas
                     </p>
-                    <strong>R$ 140.000,00</strong>
+                    <div class="price">
+                        <strong>R$ 75.000,00</strong>
+                    </div>  
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="img/amg4.jpg" alt="carro">
+                    <h3>Ferrari</h3>
+                    <p>
+                        Cambio manual, 4 portas
+                    </p>
+                    <div class="price">
+                        <strong>R$ 75.000,00</strong>
+                    </div>  
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="img/amg4.jpg" alt="carro">
+                    <h3>Ferrari</h3>
+                    <p>
+                        Cambio manual, 4 portas
+                    </p>
+                    <div class="price">
+                        <strong>R$ 75.000,00</strong>
+                    </div>  
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="img/amg4.jpg" alt="carro">
+                    <h3>Ferrari</h3>
+                    <p>
+                        Cambio manual, 4 portas
+                    </p>
+                    <div class="price">
+                        <strong>R$ 75.000,00</strong>
+                    </div>  
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="img/amg4.jpg" alt="carro">
+                    <h3>Ferrari</h3>
+                    <p>
+                        Cambio manual, 4 portas
+                    </p>
+                    <div class="price">
+                        <strong>R$ 75.000,00</strong>
+                    </div>  
+                    <button type="button">Tenho interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>Promoções</h2>
+            <ul class="container-flex lista-veiculos">
+                <li>
+                    <img src="img/amg4.jpg" alt="carro">
+                    <h3>Ferrari</h3>
+                    <p>
+                        Cambio manual, 4 portas
+                    </p>
+                    <div class="price">
+                        <del>R$ 100.000,00</del>
+                        <strong>R$ 75.000,00</strong>
+                    </div>  
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="img/amg4.jpg" alt="carro">
+                    <h3>Ferrari</h3>
+                    <p>
+                        Cambio manual, 4 portas
+                    </p>
+                    <div class="price">
+                        <del>R$ 100.000,00</del>
+                        <strong>R$ 75.000,00</strong>
+                    </div>  
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="img/amg4.jpg" alt="carro">
+                    <h3>Ferrari</h3>
+                    <p>
+                        Cambio manual, 4 portas
+                    </p>
+                    <div class="price">
+                        <del>R$ 100.000,00</del>
+                        <strong>R$ 75.000,00</strong>
+                    </div>  
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="img/amg4.jpg" alt="carro">
+                    <h3>Ferrari</h3>
+                    <p>
+                        Cambio manual, 4 portas
+                    </p>
+                    <div class="price">
+                        <del>R$ 100.000,00</del>
+                        <strong>R$ 75.000,00</strong>
+                    </div>  
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="img/amg4.jpg" alt="carro">
+                    <h3>Ferrari</h3>
+                    <p>
+                        Cambio manual, 4 portas
+                    </p>
+                    <div class="price">
+                        <del>R$ 100.000,00</del>
+                        <strong>R$ 75.000,00</strong>
+                    </div>  
                     <button type="button">Tenho interesse</button>
                 </li>
             </ul>
@@ -85,6 +199,7 @@
         $(document).ready(function() {
             $('#carrossel-imagens').slick({
                 autoplay: true,
+                autoplaySpeed: 500,
             });
             
             $('.menu-hamburguer').click(function() {
